@@ -1,0 +1,26 @@
+name: Audit
+
+# Checks every cask whenever one changes: a release pushing a new version, or
+# a pull request.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@eb02c69dbabdb66ff183c614f4ce7ab3c077592c # 2026.10.12.1
+      # The checkout is the tap itself, so trust it before Homebrew loads it.
+      - run: brew trust --tap ashtonian/tap
+      - name: brew audit
+        run: |
+          shopt -s nullglob
+          casks=(Casks/*.rb)
+          if (( ${#casks[@]} == 0 )); then echo "no casks yet"; exit 0; fi
+          brew audit --strict --tap ashtonian/tap
