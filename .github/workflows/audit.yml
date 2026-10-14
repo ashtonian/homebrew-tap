@@ -16,8 +16,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: Homebrew/actions/setup-homebrew@eb02c69dbabdb66ff183c614f4ce7ab3c077592c # 2026.10.12.1
-      # The checkout is the tap itself, so trust it before Homebrew loads it.
-      - run: brew trust --tap ashtonian/tap
+      # Checks out and taps this repository, trusting it.
       - name: brew audit
         run: |
           shopt -s nullglob
