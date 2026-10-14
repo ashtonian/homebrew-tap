@@ -6,25 +6,25 @@ cask "gitten" do
     end
   end
 
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      sha256 "52ccc973c1ecda6f661660cdb8ef5606ff65386af9314fa00bbc369b9b6d6e9d"
+      sha256 "9f2f07504fe893e26e892d808aaec86de8683cda2953b9a5f959141d1f1e4f8a"
       url "https://github.com/ashtonian/gitten/releases/download/v#{version}/gitten_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5f45aa58e75f74f9d219875892ab2f4ca65ffe14b8981e75ec1b1fee66030104"
+      sha256 "8500c9c62734383647e1486f1ea1b69b82a2cbae42e40c8a0e46e14dd5c8831b"
       url "https://github.com/ashtonian/gitten/releases/download/v#{version}/gitten_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "aac5af5fe3b3ffe1a2dcc5824d3b8cc8e6403d099ffe36b1902adcb7cb345975"
+      sha256 "9857ca578f75808665b2dcc1fe076784b11b10d06a3d27cf699fb37ab299269e"
       url "https://github.com/ashtonian/gitten/releases/download/v#{version}/gitten_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "242b08ddff8754a44a7399a6af91f10d54bb7c6e0eccaf5787ec080680cf1ce3"
+      sha256 "bfdd47b7c90d265ae7072e852ded07fa2d3f4f40c686f538acebd3bb09dac743"
       url "https://github.com/ashtonian/gitten/releases/download/v#{version}/gitten_#{version}_linux_amd64.tar.gz"
     end
   end
