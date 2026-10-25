@@ -4,18 +4,20 @@ Homebrew casks for [ashtonian](https://github.com/ashtonian)'s tools.
 
 | Cask | What it is |
 | --- | --- |
-| [gitten](https://github.com/ashtonian/gitten) | Find, clone and keep in sync every repo you work on across GitHub, GitLab and Gitea/Forgejo, then launch coding agents on them side by side. |
+| [gitstead](https://github.com/ashtonian/gitstead) | Find, clone and keep in sync every repo you work on across GitHub, GitLab and Gitea/Forgejo, then launch coding agents on them side by side. |
 
 ## Install
 
 ```bash
-brew install --cask ashtonian/tap/gitten
+brew install --cask ashtonian/tap/gitstead
 ```
 
 Name the cask in full, `ashtonian/tap/<cask>`: Homebrew requires trust for
 taps outside its own, and installing by the full name trusts that cask, so
 `brew upgrade` keeps it current. To use short names, or every cask here, trust
 the whole tap with `brew trust --tap ashtonian/tap`.
+
+Existing installations should follow the [migration instructions](https://github.com/ashtonian/gitstead/releases/tag/v0.3.0) before upgrading.
 
 ## Notes
 
@@ -29,7 +31,7 @@ the whole tap with `brew trust --tap ashtonian/tap`.
 ## Uninstall
 
 ```bash
-brew uninstall --cask gitten
+brew uninstall --cask gitstead
 ```
 
 Some tools install things of their own, such as a background schedule; the
