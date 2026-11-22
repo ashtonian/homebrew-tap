@@ -6,25 +6,25 @@ cask "gitstead" do
     end
   end
 
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_arm do
-      sha256 "033a428b0065c5934d00a0b40e26e1baa76b078b62fa55d4b84fd9654fc977f5"
+      sha256 "8693e80eec69f2d95dfb2223543c829fd56f1bd4ca473947e487305c3aa8dfd6"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "900b980901e3ecf75113d5836fc559661d902a7c46b685e70aafd13b4900773c"
+      sha256 "73c90fab3760de72be7b9ba462f6151650b569212808ad6b8e3df732c9e1b6b1"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "7148a10a476c931e91a91cbd35ba46399696dacd8de1f365ae756ee79595bd32"
+      sha256 "8be005bbd0e01af951f5a3d72be295c1daaa37a3c09d0b45ba7ad31be3e4bcbb"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "fd2a64f299cdcd595fb184e47035b7b54f73d40642ac15139dc81342de1d2485"
+      sha256 "7b441418f28a8bf76fb96d2b06644f283ae601632006e606f40c33a1635db194"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -39,7 +39,7 @@ cask "gitstead" do
 
   binary "gitstead"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     Get started with `gitstead setup`. Before uninstalling, remove the
