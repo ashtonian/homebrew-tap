@@ -6,25 +6,25 @@ cask "gitstead" do
     end
   end
 
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     on_arm do
-      sha256 "ddf686b6b1158031e48ae40e2c707f3723c5f9e66d759a68f4654e57b15f38ee"
+      sha256 "211102c52005a05360c94e0cfd5e073be39ad5194cafdba950fef5051bfefc58"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "afcf71b12d4be8cfbe3822d6c37b619c2ba7ccfc8cf4447f1f95eea9dfa8a985"
+      sha256 "1f9a08e21cd076f401c07f2ca1e0a16393e2be0cbe093024cc0e8473b0d022f3"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "2abfbf9660005c06f7137c2d3ca89e334fe82c1869f47805bceef8091d882787"
+      sha256 "0f5536ebd10867d7d747907966d9e7f44a5cd16db8d7c6e0c33749fa9f4ebc4c"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "968a1bddb1eb11c44d23100d90da401cd42399c76963b3b4d9030fa02fd3fbcd"
+      sha256 "c0e2cb84d956473cff1211f23c5068d2c8fee9afcae6cf504b68bf708cf670ec"
       url "https://github.com/ashtonian/gitstead/releases/download/v#{version}/gitstead_#{version}_linux_amd64.tar.gz"
     end
   end
